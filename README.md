@@ -64,7 +64,7 @@ Mỗi tệp "SINH VIÊN CÀI ĐẶT" là **pseudo-code chạy được** (import
 ## 4. Cài đặt
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate      # Python 3.11+
+python3 -m venv .venv && source .venv/bin/activate      # Python 3.11+  (Windows: .venv\Scripts\activate)
 pip install -r requirements.txt
 cp .env.example .env                                     # rồi điền khóa CỦA BẠN
 ```
@@ -73,9 +73,24 @@ Bạn cần ba loại khóa (điền vào `.env`, **không bao giờ commit** `.
 
 | Khóa | Lấy ở đâu | Ghi chú |
 |---|---|---|
-| LLM (`LAB_MODEL` + khóa nhà cung cấp) | Nhà cung cấp bạn chọn (OpenAI, Anthropic, Google, OpenRouter, Ollama...) | Mô hình **phải hỗ trợ tool calling**. Chép tên mô hình từ tài liệu của nhà cung cấp. |
-| `DAYTONA_API_KEY` | https://app.daytona.io | Kiểm tra gói miễn phí / credit hiện hành. Không có tài khoản hoặc hết credit: đặt `SANDBOX=docker` để chạy sandbox trong container Docker cục bộ (xem `.env.example`). |
-| `EXA_API_KEY` (khuyến nghị) | https://dashboard.exa.ai/api-keys | Có thể chạy không khóa, nhưng bản miễn phí của MCP bị giới hạn tốc độ rất nhanh. |
+| LLM (`LAB_MODEL` + khóa nhà cung cấp) | Nhà cung cấp bạn chọn (OpenAI, Anthropic, Google, OpenRouter...) | Mô hình **phải hỗ trợ tool calling**. Ví dụ: `openai:gpt-4o-mini` + `OPENAI_API_KEY`. |
+| `DAYTONA_API_KEY` | https://app.daytona.io | Không có tài khoản: đặt `SANDBOX=docker` để chạy sandbox trong Docker cục bộ. |
+| `EXA_API_KEY` (khuyến nghị) | https://dashboard.exa.ai/api-keys | Miễn phí $10 credit. Không có key vẫn chạy được nhưng bị rate limit nhanh. |
+
+**Ví dụ `.env` hoàn chỉnh (dùng OpenAI + Docker sandbox):**
+
+```env
+LAB_MODEL=openai:gpt-4o-mini
+OPENAI_API_KEY=sk-...
+
+SANDBOX=docker
+SANDBOX_IMAGE=python:3.12-slim
+
+EXA_API_KEY=...
+```
+
+> **Docker sandbox**: cần Docker Desktop đang chạy. Image `python:3.12-slim` sẽ được pull tự động lần đầu.  
+> **Daytona sandbox**: điền `DAYTONA_API_KEY` và bỏ comment dòng `DAYTONA_API_KEY` trong `.env`.
 
 ## 5. Làm bài
 
@@ -91,6 +106,28 @@ python research.py "survey about world model"
 ```
 
 Kết quả nằm ở `reports/survey-about-world-model.md` cùng `.sources.json` và `.meta.json`.
+
+## 6. Cấu trúc thư mục `reports/`
+
+Mỗi lần chạy tạo ra 3 file trong `reports/`:
+
+| File | Nội dung |
+|---|---|
+| `<slug>.md` | Báo cáo Markdown có `## References` ở cuối |
+| `<slug>.sources.json` | Mảng JSON các nguồn `{n, id, url, title, date, source}` |
+| `<slug>.meta.json` | Metadata: `topic`, `model`, `elapsed_s`, `subagent_calls`, `tool_calls`, `tokens`, `n_sources`, `source_families` |
+
+Ví dụ `reports/survey-about-world-model.meta.json`:
+```json
+{
+  "topic": "survey about world model",
+  "model": "gpt-4o-mini",
+  "elapsed_s": 62.2,
+  "subagent_calls": 4,
+  "n_sources": 5,
+  "source_families": ["arxiv", "hf-daily", "hf-search", "web"]
+}
+```
 
 ## 6. Chủ đề và nộp bài
 
