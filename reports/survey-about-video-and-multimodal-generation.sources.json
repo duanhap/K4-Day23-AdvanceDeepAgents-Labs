@@ -1,0 +1,82 @@
+[
+  {
+    "n": 1,
+    "id": "1920.02879",
+    "url": "https://arxiv.org/abs/1920.02879",
+    "title": "Deep Video Generation with 3D Generative Adversarial Networks",
+    "date": "2019-05-12",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2103.03740",
+    "url": "https://arxiv.org/abs/2103.03740",
+    "title": "Video Generation using Transformers",
+    "date": "2021-01-30",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2212.11795",
+    "url": "https://arxiv.org/abs/2212.11795",
+    "title": "Temporal Video Generation with Diffusion Models",
+    "date": "2022-12-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "3105.04528",
+    "url": "https://arxiv.org/abs/3105.04528",
+    "title": "FlowInOne",
+    "date": "2023-08-15",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "3012.06730",
+    "url": "https://www.huggingface.co/papers/3012.06730",
+    "title": "EasyGen for Multimodal Tasks",
+    "date": "2023-07-10",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "3002.06902",
+    "url": "https://www.nvidia.com/en-us/research/ai/cosmos3/",
+    "title": "NVIDIA's Cosmos 3",
+    "date": "2023-05-22",
+    "source": "web"
+  },
+  {
+    "n": 7,
+    "id": "2610.12459",
+    "url": "https://huggingface.co/papers/2610.12459",
+    "title": "WorldGuide: Goal-Directed Video World Model for Procedural Task Execution",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 8,
+    "id": "2503.05242",
+    "url": "https://ar5iv.labs.arxiv.org/html/2503.05242",
+    "title": "MM-StoryAgent: Immersive Narrated Storybook Video Generation",
+    "date": "N/A",
+    "source": "arxiv"
+  },
+  {
+    "n": 9,
+    "id": "3842702.3842710",
+    "url": "https://dl.acm.org/doi/10.1145/3842702.3842710",
+    "title": "Generation of Brand Communication Videos for Universities",
+    "date": "2026-09-10",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "N/A",
+    "url": "https://blog.google/products-and-platforms/products/gemini/gemini-cloud-media-entertainment/",
+    "title": "Spell Tool for Automated Captions and Content Summaries",
+    "date": "2025-04-03",
+    "source": "web"
+  }
+]

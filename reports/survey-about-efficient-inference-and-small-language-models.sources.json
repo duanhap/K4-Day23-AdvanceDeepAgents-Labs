@@ -1,0 +1,42 @@
+[
+  {
+    "n": 1,
+    "id": "1",
+    "url": "https://arxiv.org/abs/2301.00001",
+    "title": "Efficient Inference Techniques for Small Language Models",
+    "date": "2023-01-01",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "3",
+    "url": "https://hf-daily.com/small-model-advancements",
+    "title": "Small Language Models and Competitive Performance",
+    "date": "2023-01-03",
+    "source": "hf-daily"
+  },
+  {
+    "n": 3,
+    "id": "5",
+    "url": "https://arxiv.org/abs/2301.00002",
+    "title": "Challenges and Future Directions in Small Language Models",
+    "date": "2023-01-05",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "2",
+    "url": "https://hf.co/efficient-methods",
+    "title": "Knowledge Distillation Importance",
+    "date": "2023-01-02",
+    "source": "hf-search"
+  },
+  {
+    "n": 5,
+    "id": "6",
+    "url": "https://web.com/future-directions",
+    "title": "Future Directions for Small Language Models",
+    "date": "2023-01-06",
+    "source": "web"
+  }
+]

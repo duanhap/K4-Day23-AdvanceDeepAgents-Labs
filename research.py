@@ -204,10 +204,12 @@ def main(topic: str) -> int:
             agent = build_lead_agent(backend, model)
 
             try:
+                print(f"[research] invoking agent on topic: {topic!r}", flush=True)
                 result = agent.invoke(
                     {"messages": [{"role": "user", "content": build_prompt(topic)}]},
                     config={"recursion_limit": 1000},
                 )
+                print(f"[research] agent finished, messages: {len(result.get('messages', []))}", flush=True)
             except Exception as exc:
                 # GraphRecursionError or any agent-level failure
                 name = type(exc).__name__
@@ -216,6 +218,17 @@ def main(topic: str) -> int:
 
             elapsed = time.monotonic() - start
             messages = result.get("messages", [])
+
+            # print last few messages for debugging
+            for m in messages[-5:]:
+                mtype = type(m).__name__
+                content = getattr(m, "content", "")
+                if isinstance(content, str):
+                    print(f"[debug] {mtype}: {content[:200]}", flush=True)
+                elif isinstance(content, list):
+                    for part in content:
+                        if isinstance(part, dict) and part.get("type") == "text":
+                            print(f"[debug] {mtype}: {part['text'][:200]}", flush=True)
 
             try:
                 report_path = save_outputs(

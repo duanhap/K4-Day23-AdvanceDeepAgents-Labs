@@ -1,0 +1,65 @@
+[
+  {
+    "n": 1,
+    "id": "2602.03195",
+    "url": "https://huggingface.co/papers/2602.03195",
+    "title": "Reinforcement Learning Principles Applied to Large Language Models",
+    "date": "2026-02-03",
+    "source": "hf-search"
+  },
+  {
+    "n": 2,
+    "id": "2511.12429",
+    "url": "https://huggingface.co/papers/2511.12429",
+    "title": "Reinforcement Learning for Large Language Models",
+    "date": "2025-11-16",
+    "source": "hf-search"
+  },
+  {
+    "n": 3,
+    "id": "2309.17176",
+    "url": "https://huggingface.co/papers/2309.17176",
+    "title": "Implementing RLAdapter for Robust Performance in RL Tasks with Large Language Models",
+    "date": "2023-09-29",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "2610.12124",
+    "url": "https://arxiv.org/abs/2610.12124",
+    "title": "Hippocam: A Framework for Hierarchical Memory in Reinforcement Learning",
+    "date": "2026-10-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 5,
+    "id": "2610.11502",
+    "url": "https://arxiv.org/abs/2610.11502",
+    "title": "Federated Group Relative Policy Optimization in Language Models",
+    "date": "2026-10-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 6,
+    "id": "2610.12061",
+    "url": "https://arxiv.org/abs/2610.12061",
+    "title": "Enhancing Adaptive Reasoning in LLM Agents",
+    "date": "2026-10-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "can-rl-teach-long-horizon-reasoning",
+    "url": "https://arxiv.org/pdf/2605.06638v3",
+    "title": "Long-Horizon Reasoning Challenges in LLMs",
+    "date": "2026-05-16",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "url": "https://dl.acm.org/doi/abs/10.1145/3837057?af=R",
+    "date": "2026-09-29",
+    "source": "web",
+    "title": "Innovations in RL Algorithms for LLMs – Challenges and Solutions"
+  }
+]

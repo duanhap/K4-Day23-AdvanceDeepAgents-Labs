@@ -1,0 +1,66 @@
+[
+  {
+    "n": 1,
+    "id": "2504.15546",
+    "url": "https://arxiv.org/html/2504.15546v1",
+    "title": "A Framework for Testing and Adapting REST APIs as LLM Tools",
+    "date": "2025-04-22",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2608.10760",
+    "url": "https://arxiv.org/abs/2608.10760",
+    "title": "The Model Context Protocol: Connecting LLM Agents to Enterprise Tools",
+    "date": "2026-08-11",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2505.00753",
+    "url": "https://huggingface.co/papers/2505.00753",
+    "title": "Practical Applications of LLM Agents and the Balance Between Autonomy and Human Agency",
+    "date": "2025-05-01",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "2406.11200",
+    "url": "https://huggingface.co/papers/2406.11200",
+    "title": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+    "date": "2024-06-17",
+    "source": "hf-search"
+  },
+  {
+    "n": 5,
+    "id": "N/A",
+    "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    "title": "Writing Effective Tools for AI Agents—Using AI Agents",
+    "date": "2025-09-11",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "2605.14241",
+    "url": "https://arxiv.org/abs/2605.14241",
+    "title": "Latency-Quality Routing for Functionally Equivalent Tools in LLM Agents",
+    "date": "2026-05-14",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "2510.22620",
+    "url": "https://huggingface.co/papers/2510.22620",
+    "title": "Limitations and Vulnerabilities of LLMs as Agents",
+    "date": "2025-10-26",
+    "source": "hf-search"
+  },
+  {
+    "n": 8,
+    "id": "2601.02749",
+    "url": "https://arxiv.org/abs/2601.02749",
+    "title": "Emergence of Agentic AI Systems with LLM Capabilities",
+    "date": "2026-01-06",
+    "source": "arxiv"
+  }
+]
